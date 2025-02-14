@@ -1,2 +1,2 @@
-# prueba
-Un prueba para conocer GitHub
+# Angular
+Primer proyecto de angular
