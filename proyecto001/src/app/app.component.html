@@ -1,6 +1,8 @@
 <div>
+  <h3> Interpolación en los archivos HTML de Angular</h3>
   <p>Tu nombre es {{nombre}}</p>
   <p>Tu edad es {{edad}}</p>
+  <h3>Directivas *ngIf y *ngFor</h3>
   <p *ngIf="edad>18;else menor" >Eres mayor de edad</p>
   <ng-template #menor>Eres menor de edad</ng-template>
   <p>{{esFumador()}}</p>
@@ -11,11 +13,10 @@
   <select name="" id="">
     <option *ngFor="let prov of provincias" value="{{prov.id}}">{{prov.nombre}}</option>
   </select>
-
   <table border="1">
     <tr>
       <th>ID</th>
-    <th>Nombre</th>
+      <th>Nombre</th>
     </tr>
     <tr  *ngFor="let prov of provincias">
       <td> {{prov.nombre}}</td>
@@ -30,9 +31,10 @@
   {{contador}} <br>
   <button (click)="decrementar()">Decrementar</button>
   <button (click)="incrementar()">Incrementar</button>
- </div>
+</div>
 
- <div>
+<div>
+   <h3>Directiva ngModel</h3>
   <input type="text" [(ngModel)]="nombre" name="" id="">
  </div>
 </div>
